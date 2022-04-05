@@ -1,0 +1,70 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\newcolumntype{d}{S[input-symbols = ()]}
+
+\title{PS 8}
+\author{Jack Wang}
+
+\begin{document}
+\maketitle
+
+
+\section{$\hat\beta$ with lm () }
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{lc}
+\toprule
+  & Model 1\\
+\midrule
+X1 & 1.501\\
+ & \vphantom{9} (0.002)\\
+X2 & -0.996\\
+ & \vphantom{8} (0.002)\\
+X3 & -0.249\\
+ & \vphantom{7} (0.002)\\
+X4 & 0.747\\
+ & \vphantom{6} (0.002)\\
+X5 & 3.502\\
+ & \vphantom{5} (0.002)\\
+X6 & -1.999\\
+ & \vphantom{4} (0.002)\\
+X7 & 0.501\\
+ & \vphantom{3} (0.002)\\
+X8 & 0.999\\
+ & \vphantom{2} (0.002)\\
+X9 & 1.253\\
+ & \vphantom{1} (0.002)\\
+X10 & 1.999\\
+ & (0.002)\\
+\midrule
+Num.Obs. & 100000\\
+R2 & 0.991\\
+R2 Adj. & 0.991\\
+AIC & 144993.2\\
+BIC & 145097.9\\
+Log.Lik. & -72485.615\\
+F & 1080711.501\\
+RMSE & 0.50\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+As is shown in the table the estimates of $ \beta $ is very close to the given $\beta$.
+
+
+\end{document}
