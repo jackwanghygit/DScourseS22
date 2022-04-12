@@ -1,0 +1,51 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{PS9}
+\author{Jack Wang}
+
+\begin{document}
+\maketitle
+
+
+\section{Answers}
+
+\begin{itemize}
+\item LASSO model
+What is the optimal value of $\lambda$? What is the in-sample RMSE? What is the
+out-of-sample RMSE (i.e. the RMSE in the test data)?
+\end{itemize}
+
+The optimized lambda is 0.00139. The in sample RMSE is 0.05439101. The out of sample RMSE is 0.17
+
+\begin{itemize}
+\item Ridge regression model
+What is the optimal value of $\lambda$? What is the in-sample RMSE? What is the
+out-of-sample RMSE (i.e. the RMSE in the test data)?
+\end{itemize}
+
+The optimized lambda is 0.0373. The in sample RMSE is 0.07423329. The out of sample RMSE is 0.173
+
+
+\begin{itemize}
+\item Would you be able to estimate a simple linear regression model on a data set that had more columns than rows? Using the RMSE values of each of the tuned models in the previous two questions, comment on where your model stands in terms of the bias-variance tradeoff.
+\end{itemize}
+
+When a data set have more columns than rows, we will not have enough degree of freedom to estimate a simple linear regression model.
+
+The smaller the RMSE is the smaller the variance is. However, this will make the model biased. Therefore, the corresponding RMSE of optimal $\lambda$ is not the smallest RMSE.
+
+
+\end{document}
