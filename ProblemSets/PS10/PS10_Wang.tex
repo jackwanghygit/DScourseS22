@@ -1,0 +1,47 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Your Paper}
+\author{You}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Results}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} 
+
+ penalty & .estimate & alg  & cost_complexity & tree_depth  & min_n & hidden_units &neighbors &cost & rbf_sigma   \\ [0.5ex] 
+ \hline
+ 0.00 &0.85 &logit & & & & & & & \\ 
+
+ & 0.87 &Tree & 0.00  & 10.00 & 50.00 & & & &\\
+ 
+ 1.00 & 0.83 & nnet & & & & 7.00 & & &       \\
+ 
+ & 0.84 & knn & & & & & 30.00 & & \\
+ 
+ & 0.86 & svm & & & & & & 1.00 & 0.25  \\ [1ex] 
+
+\end{tabular}
+\end{center}
+
+Per the results shown in the table, it seems that the tree model got the best out-of-sample estimating performance.
+
+
+\end{document}
