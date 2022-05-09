@@ -1,0 +1,7 @@
+Step1:
+
+Using "python code" to scrape earnings press releases from SEC EDGAR. "ng.txt" containing urls of 8-K filings with which press releases are disclosed, will be referred in python code. This step will generate "done.json" containing all the press releases with non-GAAP earnings.
+
+Step2:
+
+Using R for machine learning model training. Read the done.json and the "ngpr.csv" into R and merge these two together to get a dataset containing both erc and press releases text. The file size of the original "done.json" is very large, so I just include the treated data "test1.json" in the file. However, the code to process data has been shown in the "R code". The detailed process is explained in the "R code".
